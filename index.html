@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Ashesi University College</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+
+  <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+  
+  <script>
+    var userAgent = navigator.userAgent + '';
+    if (userAgent.indexOf('iPhone') > -1) {
+      document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+      var mobile_system = 'iphone';
+    } else if (userAgent.indexOf('Android') > -1) {
+      document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+      var mobile_system = 'android';
+    } else {
+      var mobile_system = '';
+    }
+  </script>
+  
+  <script src="js/lib/jquery.js"></script>
+  <!-- your scripts here -->
+  <script src="js/app/app.js"></script>
+  <script src="js/app/bootstrap.js"></script>
+  <script src="js/lib/jquery.mobile.js"></script>
+  
+  </head>
+  <body>
+    
+    <div data-role="page">
+
+    	<div data-role="header">
+    		<h1>Ashesi University College</h1>
+    	</div><!-- /header -->
+
+    	<div data-role="content">
+        <img src="ashesi logo.png">
+        <p>Welcome to Ashesi University</p><br>
+    		<p>Ashesi University College is the only Liberal Arts University in Africa with the aim of educating ethical and Entrepreneurial leaders. </p>
+    		<p>The following are the courses offered in Ashesi.</p>
+        <li>Computer Science</li>
+        <li>Computer Engineering</li>
+        <li>Mechanical Engineering</li>
+        <li>Electrical and Electronic Engineering</li>
+        <li>Business Administration</li>
+        <li>Management Information Systems</li>
+    	</div><!-- /content -->
+
+    	<div data-role="footer">
+    		<h4>Contact Us</h4>
+        <p>1 University Avenue</p>
+        <p>Berekuso E|R - Accra, Ghana</p>
+        <p>PMB CT 3 Cantonments</p>
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+    
+  </body>
+</html>
